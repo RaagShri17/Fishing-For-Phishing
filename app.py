@@ -2,14 +2,12 @@
 PhishGuard - Phishing Awareness Website
 Backend: Flask + ML-based phishing detection
 """
-from flask_cors import CORS
 from flask import Flask, render_template, request, jsonify
 import re
 import math
 from collections import Counter
 
 app = Flask(__name__)
-CORS(app)
 
 # ─────────────────────────────────────────────
 #  ML-BASED PHISHING DETECTOR (No external libs)
@@ -385,4 +383,5 @@ def analyze_url():
     return jsonify(result)
 
 if __name__ == '__main__':
+
     app.run(debug=True)
