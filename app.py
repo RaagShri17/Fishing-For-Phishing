@@ -1,5 +1,5 @@
 """
-PhishGuard - Phishing Awareness Website
+Fishing for Phishing - Phishing Awareness Website
 Backend: Flask + ML-based phishing detection
 """
 from flask import Flask, render_template, request, jsonify
@@ -385,3 +385,4 @@ def analyze_url():
 if __name__ == '__main__':
 
     app.run(debug=True)
+
